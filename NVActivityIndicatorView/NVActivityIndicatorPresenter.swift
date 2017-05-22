@@ -181,7 +181,7 @@ public final class NVActivityIndicatorPresenter {
         containerView.backgroundColor = activityData.backgroundColor
         containerView.restorationIdentifier = restorationIdentifier
         containerView.translatesAutoresizingMaskIntoConstraints = false
-
+        containerView.isUserInteractionEnabled = false
         let activityIndicatorView = NVActivityIndicatorView(
             frame: CGRect(x: 0, y: 0, width: activityData.size.width, height: activityData.size.height),
             type: activityData.type,
